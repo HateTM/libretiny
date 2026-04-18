@@ -53,6 +53,23 @@
         }
       }
     },
+    "framework-realtek-ambd": {
+      "type": "framework",
+      "optional": true,
+      "version": "https://github.com/hatetm/framework-realtek-ambd#v2025.07.23",
+      "version_prefix": true,
+      "toolchains": {
+        "any": "gccarmnoneeabi@~1.100301.0"
+      },
+      "libraries": {
+        "freertos": "10.2.0",
+        "lwip": {
+          "2.0.2": "2.0.2-ambd",
+          "2.2.0": "2.2.0-ambd",
+          "default": "2.2.0-ambd"
+        }
+      }
+    },
     "framework-beken-bdk": {
       "type": "framework",
       "optional": true,
