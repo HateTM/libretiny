@@ -34,11 +34,4 @@ jobs:
           mkdir -p site/
           echo docs.libretiny.eu > site/CNAME
 
-      - name: Deploy docs
-        uses: libretiny-eu/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CONFIG_FILE: mkdocs.yml
-          EXTRA_PACKAGES: build-base doxygen
-          REQUIREMENTS: docs/requirements.txt
-          CUSTOM_DOMAIN: docs.libretiny.eu
+
